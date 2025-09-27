@@ -30,13 +30,13 @@ int main(void) {
 
     // Validate input
     if (n < 0) {
-        printf("Error: Factorial is not defined for negative numbers.\n");
+        printf("Invalid input! Factorial is not defined for negative numbers.\n");
         return 1;
     }
     
     // Calculate and print result
     long long result = factorial(n);
-    printf("%d! = %lld\n", n, result);
+    printf(" The factorial of %d = %lld.\n", n, result);
 
     return 0;
 }
