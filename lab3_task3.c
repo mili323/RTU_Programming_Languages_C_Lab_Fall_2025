@@ -1,6 +1,7 @@
 /*
  * Lab 3, Task 3
- * Student Name, Student ID
+ * Student Name: Nandana Subhash
+ * Student ID: 241ADB029
  *
  * Implement basic string handling functions.
  * Write your own versions of:
@@ -41,10 +42,27 @@ int main(void) {
 
 // Implement functions below
 int my_strlen(const char *str) {
-    // TODO: count characters until '\0'
-    return 0; // placeholder
+    // Count characters until '\0'
+    int length = 0;
+    
+    // Loop through each character until we find the null terminator
+    while (str[length] != '\0') {
+        length++;
+    }
+    
+    return length;
 }
 
 void my_strcpy(char *dest, const char *src) {
-    // TODO: copy characters until '\0'
+    // Copy characters until '\0'
+    int i = 0;
+    
+    // Copy each character from src to dest, including the null terminator
+    while (src[i] != '\0') {
+        dest[i] = src[i];
+        i++;
+    }
+    
+    // Don't forget to add the null terminator at the end
+    dest[i] = '\0';
 }
